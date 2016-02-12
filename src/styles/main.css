@@ -1,0 +1,24 @@
+@import 'import';
+
+:root {
+  --main-color: #0f0;
+}
+
+.bar-foo {
+    color: #ccc;
+}
+
+.foo-bar {
+    background-image: url('tets');
+
+    .baz {
+        background: #fff;
+        color: var(--main-color);
+    }
+}
+
+@for $i from 1 to 3 {
+    .b-$i {
+        width: $(i)px;
+    }
+}
